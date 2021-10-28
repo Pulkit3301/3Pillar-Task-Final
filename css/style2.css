@@ -338,6 +338,7 @@ Dev List
   margin-top: 5px;
   color: var(--grey-500);
   margin-left: 20px;
+  margin-bottom: 0;
 }
 .single-dev:hover {
   cursor: pointer;
@@ -353,6 +354,53 @@ Dev List
 .single-dev {
   border-radius: 1.6rem;
 }
+.single-dev .comment-icon {
+  margin-bottom: 20px;
+}
+.comment {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.hide {
+  display: none;
+}
+.comment input {
+  border: none;
+  border-bottom: 1px solid rgb(131, 131, 131);
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+.comment .comment-btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.comment-btn i {
+  padding: 0;
+  margin: 0;
+}
+.single-dev .comment-value {
+  margin-bottom: 20px;
+}
+.comment-final-val {
+  margin-bottom: 20px;
+  display: none;
+}
+.comment-final-val i {
+  margin-top: 0;
+}
+.comment-final-val p {
+  margin-bottom: 0;
+}
+.show {
+  display: block;
+}
 @media screen and (max-width: 992px) {
   .dev-list-container {
     grid-template-columns: 1fr 1fr;
@@ -362,4 +410,29 @@ Dev List
   .dev-list-container {
     grid-template-columns: 1fr;
   }
+}
+/*
+===========
+Entry Section
+===========
+*/
+.blog-entry {
+  margin: 25px 0;
+}
+.input-blog-entry {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.25fr 2fr 0.5fr;
+  gap: 3rem;
+}
+.input-blog-entry h1 {
+  margin-right: 25px;
+}
+.input-blog-entry input {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  margin-right: 10px;
 }
